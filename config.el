@@ -98,6 +98,11 @@
 
 (setq backup-directory-alist '((".*" . "~/.local/share/Trash/files")))
 
+(use-package projectile
+  :ensure t
+  :init
+  )
+
 (use-package dashboard
   :ensure t 
   :init
@@ -115,9 +120,10 @@
                           (registers . 3)))
   :custom 
   (dashboard-modify-heading-icons '((recents . "file-text")
-				      (bookmarks . "book")))
+                                      (bookmarks . "book")))
   :config
   (dashboard-setup-startup-hook))
+  (setq savehist-additional-variables '(my-custom-variable another-variable))
 
 (use-package which-key
   :ensure t
