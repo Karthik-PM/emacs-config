@@ -1,3 +1,3 @@
 * EMACS CONFIG
 ** the purpose of this repo is to manually customize my emacs config from scratch without using starter kits like doom emacs , spacemacs etc.
-** the purpose of this is for me to understand how e-lisps work and probaly understand how to use emacs much more effiently.
+** the purpose of this is for me to understand how e-lisps work and probaly understand how to use emacs much more effiently and to also use org mode for note taking.
