@@ -190,6 +190,14 @@ Emacs Dashboard is an extensible startup screen showing you recent files, bookma
 	which-key-allow-imprecise-window-fit t
 	which-key-separator " → " ))
 #+end_src
+* PYTHON
+#+begin_src emacs-lisp
+  (use-package python-mode
+    :ensure t
+    :hook (python-mode . lsp-deferred)
+    :custom
+    (python-shell-interpreter "python3"))
+#+end_src
 * PY-right
 #+begin_src emacs-lisp
   (use-package lsp-pyright

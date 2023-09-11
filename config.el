@@ -145,6 +145,12 @@
       which-key-allow-imprecise-window-fit t
       which-key-separator " → " ))
 
+(use-package python-mode
+  :ensure t
+  :hook (python-mode . lsp-deferred)
+  :custom
+  (python-shell-interpreter "python3"))
+
 (use-package lsp-pyright
 :ensure t
 :hook (python-mode . (lambda ()
